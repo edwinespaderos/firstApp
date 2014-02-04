@@ -1,0 +1,1 @@
+var Post=function(){this.msg=$(".post").val()};$(document).on("click",".btn",function(){var a=new Post;$(".here").prepend(postTemplate(a)),$(".post").val("")});var postTemplate=_.template($(".post-template").text());
